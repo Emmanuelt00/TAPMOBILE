@@ -4,9 +4,9 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - scoreText: {instanceID: 0}
-  - targetPrefab: {fileID: 9163234682863020335, guid: 681a2a5e9b64d6b448fd687703491096, type: 3}
-  executionOrder: 0
+  - circle: {fileID: 6155278679423101604, guid: d8a7eb37e2cfabe46bb52a9613c72a3a, type: 3}
+  - scoreText: {fileID: 4841931636390057211, guid: cdf2ec0819f20b1498886d919f333e4c, type: 3}
+  executionOrder: 200
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 
