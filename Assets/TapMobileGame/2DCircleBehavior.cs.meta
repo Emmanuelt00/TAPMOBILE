@@ -3,8 +3,9 @@ guid: 84bd970765fd6074e8625a68f19089aa
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
-  executionOrder: 100
+  defaultReferences:
+  - scoreManager: {instanceID: 0}
+  executionOrder: 0
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 

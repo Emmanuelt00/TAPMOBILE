@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CircleBehavior : MonoBehaviour
 {
@@ -7,7 +8,6 @@ public class CircleBehavior : MonoBehaviour
     public float moveArea = 5f;
     public float moveInterval = 5f;
     public float colorChangeSpeed = 0.5f;
-
     private Vector3 startPosition;
     private Vector3 targetPosition;
     private float timer;
@@ -20,6 +20,7 @@ public class CircleBehavior : MonoBehaviour
         startPosition = transform.position;
         timer = moveInterval;
         targetPosition = startPosition;
+        UpdateScoreText();
 
         // Attempt to get the Collider2D component
         circleCollider = GetComponent<Collider2D>();
@@ -76,19 +77,25 @@ public class CircleBehavior : MonoBehaviour
 
             if (circleCollider.bounds.Contains(mousePosition))
             {
-                // Increment the score by 1 when clicking inside the circle
+                // Increment the score using the ScoreManager script
                 scoreManager.IncrementScore();
             }
             else
             {
-                // Decrement the score by 1 when clicking outside the circle
+                // Decrement the score using the ScoreManager script
                 scoreManager.DecrementScore();
             }
+
+            // Update the UI text to display the current score
+            UpdateScoreText();
         }
         else
         {
             Debug.LogError("Collider2D component is null.");
         }
     }
+    void UpdateScoreText()
+    {
+        // Add any specific behavior related to updating the score text
+    }
 }
-

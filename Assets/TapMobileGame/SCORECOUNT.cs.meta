@@ -5,7 +5,7 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - scoreText: {fileID: 1721752229772789722, guid: 709258b0b416d154d8cc5a2ff113e21a, type: 3}
-  executionOrder: 200
+  executionOrder: 0
   icon: {instanceID: 0}
   userData: 
   assetBundleName: 
